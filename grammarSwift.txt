@@ -1,0 +1,11 @@
+opTry try
+opTryOptional try?
+opTryForced try!
+opAssignment =
+opConditionalIf ?
+opConditionalElse :
+opConditionalNil ??
+opTypeCheck is
+opTypeCast as
+opTypeCastConditional as?
+opTypeCastForced as!
