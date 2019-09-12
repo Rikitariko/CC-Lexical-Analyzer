@@ -21,10 +21,8 @@ opBinAnd &
 opBinOr |
 opLogicalAnd &&
 opLogicalOr ||
-
 opClosedRange ...
 opHalfClosedRange ..<
-
 opTry try
 opTryOptional try?
 opTryForced try!
@@ -35,7 +33,6 @@ opTypeCheck is
 opTypeCast as
 opTypeCastConditional as?
 opTypeCastForced as!
-
 symbOpeningBracket (
 symbClosingBracket )
 symbOpeningSquareBracket [

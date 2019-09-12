@@ -37,6 +37,10 @@ public class LexGrammar {
         return grammar.putIfAbsent(key, val);
     }
 
+    public String get (String key) {
+        return grammar.get(key);
+    }
+
     public void print () {
         for (Map.Entry<String, String> entry : grammar.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
@@ -45,6 +49,6 @@ public class LexGrammar {
 
     public static void main(String[] args) throws FileNotFoundException {
         LexGrammar lexGrammar = new LexGrammar();
-        lexGrammar.print();
+        System.out.println(lexGrammar.get("opTry"));
     }
 }
