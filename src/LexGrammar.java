@@ -25,8 +25,8 @@ public class LexGrammar {
         }
     }
 
-    public boolean contains(String key) {
-        return grammar.containsKey(key);
+    public boolean contains(String val) {
+        return grammar.containsValue(val);
     }
 
     public String put (String key, String val) {
