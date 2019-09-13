@@ -11,9 +11,9 @@ public class LexParser {
     private static int id;
     private static boolean flag;
 
-    LexParser(/*String s*/) throws Exception {
-        in = new Scanner(new File("input.txt"));
-        grammar = new LexGrammar(); // дописать
+    LexParser(String s) throws Exception {
+        in = new Scanner(new File(s));
+        grammar = new LexGrammar();
         if (in.hasNextLine())
             lastString = in.nextLine();
         else
@@ -94,7 +94,7 @@ public class LexParser {
         return ans;
     }
     public static void main(String[] args) throws Exception {
-        LexParser ls = new LexParser();
+        LexParser ls = new LexParser("input.txt");
         while (true) {
             String s = getLexeme();
             if (s.equals(""))
