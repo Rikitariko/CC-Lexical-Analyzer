@@ -16,7 +16,7 @@ public class LexGrammar {
     }
 
     LexGrammar(String path) {
-        grammar = new HashMap<>(300);
+        grammar = new HashMap<>(1000);
         Scanner input = new Scanner(path);
         String[] temp;
         while (input.hasNextLine()) {
