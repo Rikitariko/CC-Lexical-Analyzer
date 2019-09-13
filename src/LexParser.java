@@ -89,6 +89,8 @@ public class LexParser {
                 }
             }
         }
+        if (ans.equals("//"))
+            id = lastString.length();
         return ans;
     }
     public static void main(String[] args) throws Exception {
