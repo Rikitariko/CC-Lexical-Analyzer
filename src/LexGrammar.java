@@ -7,34 +7,32 @@ public class LexGrammar {
 
     LexGrammar() throws FileNotFoundException {
         grammar = new HashMap<>(300);
+        grammar.put(" ", "opSpace");
         Scanner input = new Scanner(new File("grammarSwift.txt"));
         String[] temp;
         while (input.hasNextLine()) {
             temp = input.nextLine().split(" ");
-            grammar.put(temp[0], temp[1]);
+            grammar.put(temp[1], temp[0]);
         }
     }
 
     LexGrammar(String path) {
         grammar = new HashMap<>(1000);
+        grammar.put(" ", "opSpace");
         Scanner input = new Scanner(path);
         String[] temp;
         while (input.hasNextLine()) {
             temp = input.nextLine().split(" ");
-            grammar.put(temp[0], temp[1]);
+            grammar.put(temp[1], temp[0]);
         }
     }
 
     public boolean contains(String val) {
-        return grammar.containsValue(val);
+        return grammar.containsKey(val);
     }
 
     public String put (String key, String val) {
         return grammar.put(key, val);
-    }
-
-    public String putIfAbsent (String key, String val) {
-        return grammar.putIfAbsent(key, val);
     }
 
     public String get (String key) {
