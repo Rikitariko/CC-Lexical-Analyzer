@@ -93,17 +93,4 @@ public class LexParser {
             id = lastString.length();
         return ans;
     }
-    public static void main(String[] args) throws Exception {
-        LexParser ls = new LexParser("input.txt");
-        while (true) {
-            String s = getLexeme();
-            if (s.equals(""))
-                break;
-            else
-                if (s.equals("\\n"))
-                    System.out.println("<" + s + ">");
-                else System.out.print("<" + s + ">");
-
-        }
-    }
 }
