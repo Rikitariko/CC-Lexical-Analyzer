@@ -1,0 +1,37 @@
+var personName = "Tom"
+var personStreatAddress = "St. Patrick avenue, 20"
+var minInt16 = Int16.min
+
+let a = -13
+let b = -a
+let c = a >> b
+
+var a = 13
+a &= 5
+a |= 6
+a ^= 4
+a <<= 3
+a >>= 1
+print(a)
+
+var str1: String = ""
+var str2: String = String()
+var str: String = "123"
+var b: Int = 10
+var a: Int? = Int(str)
+if a != nil {
+    a+=b
+    print(a)
+}
+func printInfo(name: String, age: Int){
+    print("Name: \(name) ; Age: \(age)")
+}
+func getResult(_ binaryFunc: (Int, Int) -> Int, _ a: Int, _ b: Int){
+
+    let result = binaryFunc(a, b)
+    print(result)
+}
+func compare(_ r1: Double, _ r2: Double){
+    func square(_ r: Double) -> Double{ return r * r * 3.14}
+}
+compare(16.0, 15.0)
